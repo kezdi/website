@@ -8,8 +8,67 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <title>Data Analysis Textbook</title>
+  <!-- For Author images and 4 pictures -->
+  <style>
+    div.containerAuthor {
+      display:inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center;
+    }
+    .img-circle {
+        border-radius: 50%;
+    }
 
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 49.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  </style>
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,14 +83,17 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
+      <div class="sidebar-heading">Menu </div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Tabe of contents</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Case studies</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Recommendations for teaching</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Lecture slides</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Authors</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Publisher</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Find us on GitHub</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Buy this textbook</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -52,29 +114,75 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Case studies</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Table of contents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find us on Github</a>
             </li>
           </ul>
         </div>
       </nav>
 
       <div class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+        <h1 class="mt-4">Data Analysis: Patterns, Prediction and Causality</h1>
+        <h2>A graduate textbook for Business, Economics and Policy</h2>
+        <br>
+        <p><strong>Data Analysis: Patterns, Prediction and Causality</strong> is a textbook that covers the most important methods and tools data analysts need in the fields of business, economics and public policy.  It textbook provides integrated knowledge of methods traditionally scattered around various fields such as econometrics, machine learning and practical business statistics. It covers data organization, data description, regression analysis, predictive analytics using regression and machine learning tools, causal analysis of the effects of interventions by doing experiments or using observational data, and practical skills for working with real-life data and collecting data. The textbook covers relatively few methods but helps students gain a a lot of practice and a deep intuitive understanding of those methods. We put a lot of emphasis on the interpretation and visualization of results.
+        </p>
+        <h3>Details of content</h3>
+        <p>Our textbook covers integrated knowledge of methods and tools traditionally scattered around various fields such as econometrics, machine learning and practical business statistics. Our sections in the book are:
+        </p>
+        <!-- HERE: 4 pictures "Gallery" (with 1 sentence each) in squares for the 4 parts . Click: link to the respective part in second menu page "Key topics" -->
+          <div class="responsive">
+            <div class="gallery">
+              <div class="desc"><strong>I. Data Exploration</strong></div>
+              <a href="about.html#Section1">
+                <img src="img/section1.png" width="600" height="400">
+              </a>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <div class="desc"><strong>II. Patterns: regression analysis</strong></div>
+              <a href="about.html#Section2">
+                <img src="img/section2.png" width="600" height="400">
+              </a>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <div class="desc"><strong>III. Prediction</strong></div>
+              <a href="about.html#Section3">
+                <img src="img/section3.png" width="600" height="400">
+              </a>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <div class="desc"><strong>IV. Causality: the effects of interventions</strong></div>
+              <a href="about.html#Section4">
+                <img src="img/section4.jpg" width="600" height="400">
+              </a>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- eddig -->
+          <br>
+          <p>State-of-the art knowledge in data analysis includes traditional regression analysis, causal analysis of the effects of interventions, predictive analytics using regression and machine learning tools, and practical skills for working with real-life data and collecting data. We cover relatively few methods but help students gain a deep intuitive understanding. The upside is that visualization and interpretation of results may become the focus of analysis.</p>
+          <p>Applied knowledge can be acquired only by working through many applications. Students will use real-life data; learn how to manage analytical projects from scratch as we provide data and code as part of an online ancillary platform. The textbook supports both  R and Stata.  The textbook is complemented with extensive online material including data, code, additional case studies, practice questions, sample exams and data exercises.</p>
       </div>
     </div>
+    <!-- The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.
+    Make sure to keep all page content within the <code>#page-content-wrapper</code>.
+    The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked. -->
     <!-- /#page-content-wrapper -->
 
   </div>
